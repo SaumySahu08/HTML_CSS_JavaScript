@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transparent Vertical Navbar with Iframe</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-image: url('v1.jpg');
+            background-size: cover; /* Cover the entire body */
+            background-position: center; /* Center the background image */
+            height: 100vh; /* Full height */
+            display: flex; /* Use flexbox for layout */
+        }
+
+        .navbar {
+            width: 200px; /* Width of the navbar */
+            
+            padding: 20px; /* Padding inside the navbar */
+            box-shadow: 2px 0 5px rgba(0, 0, 0, 0.3); /* Optional shadow for depth */
+            position: fixed; /* Fixed position */
+            height: 100%; /* Full height */
+            overflow-y: auto; /* Scroll if content overflows */
+            opacity: 0; /* Start hidden */
+            transform: translateY(20px); /* Start from below */
+            animation: slideIn 1s forwards; /* Animation */
+            animation-delay: 0.5s; /* Delay for navbar */
+        }
+
+        .navbar a {
+            display: block; /* Block display for links */
+            color: #F8F8F0; /* Text color */
+            text-decoration: none; /* Remove underline */
+            padding: 10px; /* Padding for links */
+            
+            transition: background-color 0.3s, transform 0.7s; /* Smooth transition */
+            font-size: 20px;
+            font-weight: bold;
+            
+           
+            background-color: rgba(243, 234, 234, 0.13);
+            
+        }
+
+        .navbar a:hover {
+            background-color: rgba(246, 246, 246, 0.527); /* Darker background on hover */
+            transform: translateY(-5px) ;
+            border-radius: 2px;
+            box-shadow: 0 0 5px black;
+
+
+        }
+
+        .content {
+            margin-left: 220px; /* Space for the navbar */
+            padding: 20px; /* Padding for content */
+            color: #fff; /* Text color for content */
+            flex-grow: 1; /* Allow content to grow */
+            opacity: 0; /* Start hidden */
+            transform: translateY(20px); /* Start from below */
+            animation: slideIn 1s forwards; /* Animation */
+            animation-delay: 1s; /* Delay for content */
+        }
+
+        iframe {
+            width: 100%; /* Full width of the content area */
+            height: calc(100vh - 40px); /* Full height minus padding */
+            border: none; /* Remove border */
+            background-color: transparent;
+        }
+        @keyframes slideIn {
+            to {
+                opacity: 1; /* Fully visible */
+                transform: translateY(0); /* Move to original position */
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="navbar">
+        <h2 style="font-size: 35px; color: aliceblue;">Catagory</h2>
+        <a href="simple.html" target="contentFrame" style="border-top-left-radius: 5px; border-top-right-radius: 5px;">Simple Edits</a>
+        <a href="rough.html" target="contentFrame">Page 2</a>
+        <a href="page3.html" target="contentFrame">Page 3</a>
+        <a href="page4.html" target="contentFrame">Page 4</a>
+    </div>
+
+    <div class="content">
+        <iframe name="contentFrame" src="simple.html"></iframe>
+    </div>
+
+</body>
+</html>

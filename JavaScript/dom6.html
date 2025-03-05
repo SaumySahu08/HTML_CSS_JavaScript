@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+   
+</head>
+<body>
+    <h2>demo on element object (events)</h2>
+    <button id="bt1" >Push Here</button>
+    <button id="bt2">Pull Here</button>
+
+    <script>
+        const d1 = document.querySelector("#bt1");
+        d1.addEventListener("click",function(){
+            alert("pushed")
+        });
+        const d2 = document.querySelector("#bt2");
+        d2.onclick= ()=>{
+            alert("poped");
+        }
+        // d2.onmouseover=code;
+        // d2.onmouseout=code;
+        
+
+    </script>
+</body>
+</html>

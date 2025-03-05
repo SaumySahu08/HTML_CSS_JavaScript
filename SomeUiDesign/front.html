@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Three Column Layout</title>
+    <style>
+        .container {
+            display: flex; /* Use flexbox for the main container */
+            justify-content: space-between; /* Space between columns */
+        }
+
+        .column {
+            flex: 1; /* Each column takes equal space */
+            margin: 10px; /* Margin between columns */
+            background-color: #f0f0f0; /* Background color for columns */
+            padding: 10px; /* Padding inside columns */
+        }
+
+        .inner-div {
+            display: inline-block; /* Make inner divs inline-block */
+            width: 30%; /* Set width for inner divs */
+            margin: 5px; /* Margin between inner divs */
+            background-color: #0099CC; /* Background color for inner divs */
+            color: white; /* Text color */
+            text-align: center; /* Center text */
+            padding: 10px; /* Padding inside inner divs */
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="column">
+            <div class="inner-div">Inner 1</div>
+            <div class="inner-div">Inner 2</div>
+            <div class="inner-div">Inner 3</div>
+        </div>
+        <div class="column">
+            <div class="inner-div">Inner 1</div>
+            <div class="inner-div">Inner 2</div>
+            <div class="inner-div">Inner 3</div>
+        </div>
+        <div class="column">
+            <div class="inner-div">Inner 1</div>
+            <div class="inner-div">Inner 2</div>
+            <div class="inner-div">Inner 3</div>
+        </div>
+    </div>
+</body>
+</html>

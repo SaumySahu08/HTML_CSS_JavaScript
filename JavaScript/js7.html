@@ -1,0 +1,33 @@
+<!--find the sum of two numbers-->
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+   
+</head>
+<body>
+    
+    <label >First Number</label><br>
+    <input type="text" id="fstno"><br>
+    <label >Second Number</label><br>
+    <input type="text" id="secno"><br>
+    <button onclick="addition()">Addition</button><br>
+    <output id="res"></output>
+    <script>
+        function addition(){
+            let x,y,s; // local variables
+            x=fstno.value;
+            y=secno.value;
+
+            s=+x + +y;
+            // display output
+
+            //document.write("sum is"+s);
+           // alert("sum is"+s);
+           // console.log("sum is"+s);\
+           res.value="sum is"+s;
+        }
+    </script>
+</body>
+</html>

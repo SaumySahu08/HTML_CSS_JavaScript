@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+
+    <style>
+        .cont {
+            display: flex;
+            flex-wrap: wrap; /* Allow items to wrap to the next line */
+            justify-content: space-evenly; /* Space items evenly */
+            
+        }
+        .card {
+            width: 29%; /* Width for 9:16 aspect ratio */
+            height: 600px; /* Height for 9:16 aspect ratio */
+            overflow: hidden; /* Hide overflow if needed */
+            flex: 0 1 auto; /* Prevent shrinking, allow growing */
+            border-radius:20px;
+            box-shadow: 2px 4px 10px rgb(83, 63, 102);
+            margin-top: 5%;
+        }
+        video {
+            width: 100%; /* Make video responsive */
+            height: 100%; /* Maintain aspect ratio */
+            object-fit: cover; /* Cover the card area */
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="cont">
+        <div class="card">
+            <video src="Ben.10.Omniverse.S08E04.720p.Hindi.English.Esubs - Vegamovies.to.mkv" controls autoplay muted disablePictureInPicture>Your browser does not support the video tag.</video>
+        </div>
+        <div class="card">
+            <video src="Ben.10.Omniverse.S08E04.720p.Hindi.English.Esubs - Vegamovies.to.mkv" controls  disablePictureInPicture>Your browser does not support the video tag.</video>
+        </div>
+        <div class="card">
+            <video src="Ben.10.Omniverse.S08E04.720p.Hindi.English.Esubs - Vegamovies.to.mkv" controls disablePictureInPicture>Your browser does not support the video tag.</video>
+        </div>
+    </div>
+</body>
+</html>

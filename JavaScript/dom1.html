@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <title>DOM1</title>
+</head>
+<body>
+    <h2>demo on document object properties</h2>
+    <img src="C:\Users\SAUMY\Desktop\HTML\a.png" width="150">
+    <img src="C:\Users\SAUMY\Desktop\HTML\a.png" width="150">
+
+    <a href="https://www.google.com"></a>
+    <a href="https://www.google.com"></a>
+    <a href="https://www.google.com"></a>
+   
+
+    <script>
+        document.write(`${document.title}<br>`);
+        document.title="Ajdh";
+
+        document.write(`${document.URL}<br>`);
+        //window.location.href="https://www.google.com";
+
+        const b= document.body;
+        document.write(`${b}<br>`);
+
+        const h = document.head;
+        document.write(`${h}<br>`);
+
+        const i = document.images; //i is collection object 
+        document.write(`${i}<br>`); 
+        
+        // for(let e of i){
+        //     document.write(`${e} => ${e.tagName}<br>`);
+        // }
+
+        const ob=document.links; //ob is collection object 
+        document.write(`${ob}<br>`);
+
+        const im = document.images[0];// this is not collection
+        document.write(`${im}<br>`);
+
+        const obq=document.links[0];// this is not collection
+        document.write(`${obq}<br>`);
+
+
+
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <script src='fun2.js'></script>
+</head>
+<body>
+    <script>
+        document.write(`${add}<br>`);
+        document.write(`${add(10,20)}<br>`);
+        document.write(`${prod(15,9)}<br>`);
+
+        const eles=[6,100,80,505];
+
+        //callback
+        eles.forEach(function(e){
+           document.write(`${e} `);
+        });
+        let s=0;
+        eles.forEach(function(e){
+           s+=e;
+        });
+        document.write(`<br> Sum of eles: ${s}<br>`);
+
+        //callback  a[i], a[j]
+        eles.sort(function(i,j){
+            console.log('sort');
+            return i-j;//asc order
+        });
+        document.write(`eles ${eles}<br>`);
+        //callback  a[i], a[j]
+        eles.sort(function(i,j){
+            console.log('sort');
+            return j-i;//desc order
+        });
+        document.write(`eles ${eles}<br>`);
+    </script>
+
+    <h3>attach event on already created button or element(attaching events)</h3>
+    <button id="bt">Click here</button>
+
+    <script>
+        bt.onclick=function(){
+            alert('button clicked');
+        }; 
+    </script>
+
+</body>
+</html>

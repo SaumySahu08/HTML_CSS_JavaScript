@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+</head>
+
+<body>
+    <h2>demo on removing & adding elements </h2>
+
+    <div id="div1">
+        <h3>Apple</h3>
+        <span>Mango</span>
+        <p>Orange</p>
+
+        <button onclick="document.querySelector('#div1').remove()">delete element</button>
+    </div>
+
+    <div id="div2">
+        <button id="bt2">add element</button>
+    </div>
+
+
+    <hr>
+
+    <script>
+        document.querySelector("#bt2").onclick = () => {
+            const i = document.createElement("img");
+
+            i.src = "box2-2.jpg";
+            i.style.width = "200px";
+            i.style.height = "150px";
+            i.style.borderRadius = "10px";
+
+            // document.body.appendChild(i);
+            document.querySelector("span").appendChild(i);
+
+        }
+    </script>
+</body>
+
+</html>

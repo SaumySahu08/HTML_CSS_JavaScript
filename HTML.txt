@@ -1,0 +1,874 @@
+
+
+
+20-11-2024
+----------
+
+Web site(project without server & database operations)
+Web Application(Project with server & db ope)
+
+Web Site
+=> web site is a collection of web pages.
+=> web pages is a group of html elements.
+   element nothing but paragraph, heading, button, img, hyperlink, table, textbook , password, radio, audio, video etc...\
+=> using html tags we can create these elements
+	c prog => op
+	html prog => op(web page)
+
+
+=>collection of web site = WWW
+  www is collection of websites
+=>www represents group of inter connected servers
+  gen servers, db servers, file server, mail server, dns server
+
+types of web pages
+1. static
+	=> it always displaying same info, means its not updating info automatically.
+
+2. dynamic 
+	=> it always changing info automatically
+
+
+* Internet manage by w3c(World Wide Web Consortium) organization.
+=> The w3c(World Wide Web Consortium) is an international organization, a full-time staff, and the public work together "to develop web standards".
+=> Founded in 1994 by "Tim Berners-Lee".
+
+father of web => Tim
+Tim=> web 1989/1990
+
+------------------------------------------------------------------------------------------------------------------------------------------------------------
+21-11-2024
+----------
+
+HTML Introduction
+-----------------
+
+1. html was developed by "Tim Berners-Lee in 1993-Dec"
+SGML(Standard generalised markup language)=> HTML(Hyper Text Markup Language).
+
+html is subset of which language?
+html based on which language?
+=> SGML.
+
+2. html is markup language not programming language, markup represents tag.
+html is a tag oriented programming.
+
+3. html is used to design "static web pages".
+
+4. html is open source & freeware software.
+
+5. html is case in-sensitive lang(no case restriction).
+
+			<button> </button>
+			<BuTton> </ButTon>
+			<buttOn> </bUtton>
+
+6. its error free programme, except while working URL, URI.
+
+7. for working with html no downloads and no installations required of any software.
+
+	 notepad => typing & saving
+	 browsers => execution & output
+
+8. interpreter oriented programming language.
+	line-by-line translation &
+	line-by-line execution
+
+9. browser is responsible for translation code & execution.
+
+----------------------------------------------------------------------------
+
+22-11-2024
+----------
+
+tag 
+=> tag is predefined program, program is set of instructions.
+=> these instruction are followed by browsers and produce output.
+	browser not us => skip step, its print plain text.
+
+=> tag is an English word, it should be enclosed with in < >
+										ex: <html> <h1> etc....
+Types:
+1.paired tags
+	-> pair means open tag & close tag
+	   syn:
+		<tag>...</tag>
+
+
+2.unpaired tags
+	-> unpair means only open tag
+
+	-> self closed 
+
+	-> void tags
+
+	ex	<link/> or <link>
+
+                <meta/> or <meta>
+
+
+Structure of html
+-----------------
+
+as per w3c norms every web developer should follow given structure.
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+</head>
+<body>
+welcome to html&#128525;
+</body>
+</html
+
+
+=> Doctype used to specify which version we are using while developing web page(to browser).
+
+ Syn:
+	<!DOCTYPE html url> 
+
+<!DOCTYPE html>=> a browser use new version.
+-----------------------------------------------------------------------------------------------
+25-11-2024
+----------
+Go to htclass.html file;
+
+formatting tags
+=> these tags are used to change the printing style of text (appear).
+=> presentational tags also called.
+
+tags list: 
+   strong, b, em, i, ins, u, del, s, sub, sup, span, mark, pre
+->these 13 tags are paired tags 
+-> pre is block level, remaining 12 tags are inline
+
+Go to format.html file;
+
+Semantic Tags						non-semantic Tags
+=> Systematically design tags				no
+=> user frnd, Search Engine frnd tags 			no
+=> html4 & html5 rel tags				html1 to html3
+=> strong, em, ins, del ->html4
+   mark->html5
+
+* instead of using b,i,u,s 
+use 	strong, em , ins, del						I
+	
+-> frame & frameset deleted in new version.
+---------------------------------------------------------------------------------------------
+
+
+27-11-2024
+----------
+nesting tags
+
+html
+  body
+     strong
+
+combination of tags
+
+which is the root tag for all html elements?
+which is base tag for all html elements?
+=> html tag
+
+title tag
+=> used to setting title for web pages.
+=> it is displaying in tab
+=> 1 Page 1 title
+=> it is paired tag.
+=> title tag should be use in "head" section.
+Syn:- <title>text</title>
+
+link tag
+=>used to set icon/logo for web pages
+=>    1 web site : 1 logo
+=>it is unpaired tag
+=> link tag should be use in "head" section.
+=> Syn:= <link rel="icon" href ="filename"/>
+		relative => icon, stylesheet
+		hyper reference= address of image
+		png,jpg,bmp,ico,svg,webp,jfif
+
+Img tag
+=> img tag used to displaye images on web page
+=> it is unpaired tag & inline 
+=> you can display any typ of image
+=> syn:- <img src=" ">
+
+Go to file html27-11-2024;
+---------------------------------------------------------------------------------------------
+28-11-2024
+----------
+Tag
+ is informamming to browser what to do
+
+Tag => what to do 
+•	Every tag Print some data -- img/data/audio/video/table
+
+
+
+Attribute
+ is performing to browser how to perform task
+•	Settings of data/img
+
+
+
+A tag :-
+	Anchor tag is used to create hyperlinks,hyperlinks are used to move from one web to another web page (nivigations)
+	Hyperliks  blue+underline+hand
+One page => another page
+Same web sites
+Source page => destination page
+
+Diff web sites
+Source page=> destination page
+	
+	Paired  & inline tag
+Syn:
+    <a attributes> text </a>
+<a  attributes>  img </a>,
+
+•	Type of hyperlink
+1.external links(outside of page)
+Syn:
+    <a attributes> text </a>
+<a  attributes>  img </a>,
+
+2.internal links(inside of page)
+Syn:
+    <a attributes> text </a>
+<a  attributes>  img </a>,
+
+Go to file html28-11-2024
+
+-----------------------------------------------------------------------------
+29-11-2024
+----------
+
+Anchor tag always three colour 
+Blue(new link),perple(automatically opne),red(active link)
+
+Id  is know of identify tag
+Paragraph is block level tag <p>
+
+Go to file 29ht1.html;
+Go to file 29ht2.html;
+-----------------------------------------------------------------------------
+02-12-2024
+----------
+List’s  tag
+Ol  ordered list
+•	user used to alloting seril_no for points (data)
+1,2,3  I,II,III,…… i,ii,iii,…. A,B,C,… a,b,c,….
+(default: 1,2,3…..) 
+
+•	ol is parent tag and li is child tag
+
+
+
+ul unorderd list
+•	bullests => disc ,circle ,square
+                    ( disc is default)
+
+
+
+Li(list item) tag: 
+*  Used to print data point wise
+* this is child tag 
+* both are paired tag  & block level 
+Syn:
+             <ol>
+<li>data</li>
+<li>data</li>
+…………
+</ol>
+
+Go to file 02-12ht1.html, 02-12ht2.html 02-12ht3.html
+-----------------------------------------------------------------------------
+03-12-2024
+----------
+div tag
+-------
+=>it is a container 
+=>div is used to group up elements
+=>it is block level & paired tag
+=>it is a main(parent) tag of all other elements
+Adv:
+---
+->easy maintenance
+
+
+Go to file fieldset.html;
+Go to div.html div1.html file;
+-----------------------------------------------------------------------------
+04-12-2024
+----------
+
+
+Go to div.html div1.html file;
+
+tables
+data=> rows&cols
+
+tags for table
+
+table-> used to draw a table.
+tr-> table row(tr) used to draw rows.
+   th-> table heading(th) used to set column heading
+   td-> table data(td) used to print the data within column.
+
+caption-> used to set main heading of the table
+			+
+html4 new tags
+
+thead-> used to represents table header.
+tbody-> used to represents table body.
+tfoot-> used to represents footer of the table.
+-----------------------------------------------------------------------------
+05-12-2024
+----------
+
+8 paired tags 
+ ->th & td inline
+ -> 6 block level
+
+
+table
+    tr
+      th
+      td
+    caption
+    thead
+    tbody
+    tfoot
+
+Go to file tabl1.html,table2 and table3
+
+-----------------------------------------------------------------
+06-12-2024
+----------
+input tag
+=> input tag used to create input elements.
+=> input elements are used to accept the data from users
+(runtime values).
+=> it is unpaired & inline 
+SYN: 
+    <input attr's>
+types of ie's
+ text box, password, number, reset, submit, image, checkbox, radio, date, time, email, url, file, color…. 
+Go to file input1, input2
+-----------------------------------------------------------------------------
+07-12-2024
+----------
+submit & image button
+
+=>submit button helps in send data to server
+=>same for image
+=>input elements & submit should in same form
+=>id & name attr also complsary
+Go to file submit1;
+
+form tag
+=> use to create html forms
+  ex: login page, sign up page, search page, application page 
+=> html forms are collecting data from users and sending to server prog
+=> it is paired & block level tag
+=> container, it contains input elements 
+SYN: <form attr>
+        UI Designing
+     </form>
+
+Go to file form1;
+-----------------------------------------------------------------------------
+09-12-2024
+----------
+get
+=>display user inputs in search bar
+=>also stores user inputs in history
+=>it is less secure compare to post
+=>data transfer fast
+=>it support bookmarks 
+=>data limit available(5.7kb)
+post
+=>not displaying 
+=>not storing
+=>it is more secure compare to get
+=>data transfer slow
+=>it not support bookmarks 
+=>=>data limit not available
+
+password fields are used for password, verification code, otp, card pin, cvv, pincode etc...
+
+if form contain password or uploading we have to use =>post
+
+email,url,date,time,week,month & color fields these all html5 elements
+
+Go to file form2.html;
+
+Go to file checkbox1
+
+-----------------------------------------------------------------------------
+11-12-2024
+----------
+Go to file registrationform.html;
+
+-----------------------------------------------------------------------------12-12-2024
+----------
+
+go to detnsum.htmkl;
+
+iframe tag
+=> inline frame (iframe) 
+go to iframe1.html;
+
+CSS
+=> cascading style sheets3
+=> 1996 by W3C org
+=> for applying the styles for tag/elements.
+-----------------------------------------------------------------------------
+CSS
+
+=>cascading style sheets3
+=>used to change& look of elements (styling of elements)
+=>there is no tags in css, but it provides only styles
+=> style is a rule 
+=>style is a group of properties
+=>either in internal or external or inline  scope
+=>1996 by W3C org
+=>for applying styles for tag/elements
+Note: - when we are playing cards then the arrangement of cards in our hand this arrangement is called cascade(showing one after another).
+ Html                            css
+Attributes                  properties
+Width                            width
+Height                           height
+Border                          border
+Color                           color
+CSS properties:
+1.	background-color:- The background-color property is used to specify the background color of the Html element.
+2.	background-image:- The background-image property is used to specify the image in background of the Html element.
+3.	background-repeat:- By default, the background-image property repeats the background image horizontally and vertically. Some images are repeated only horizontally or vertically. If you do not want to repeat background image then set no-repeat.
+4.	background-position:- background-position is use only in case of when you use image in background of any Html elements. It is used to define the initial position of the background image. By default, the background image is placed on the top-left of the webpage. 
+5.	CSS Border:- The CSS border properties allow you to specify the style, size, and color of an Html element border.
+6.	Border Style:- The border-style property specifies what kind of border to display.
+7.	 Border Width:- The border-width property is used to set the border width. It is set in pixels. You can also set the width of the border by using pre-defined values, thin, medium or thick.
+8.	 Border Color:- This properties are used for set the color of Html elements border. There are three method to set the color of border.
+9.	Border Radius:- border-radius are used for give the radius for border, using this you can make a circle.
+10.	CSS Display:- CSS display is the most important property of CSS which is used to display Html elements on web page. Every Html element on the webpage is a rectangular box and the CSS display property specifies the type of box used for an Html element.
+11.	display:inline:- It is used to display an Html elements in same line without any line break. 
+12.	display:none:- It is used for hide text on browser but it does not take any space.
+13.	 display:block:- It is used to displays an element as a block element. It displayselements same like <p> tag.
+14.	display:inline-block:- It is used to displays an element as a block element. It display an elements same like <p> tag.
+15.	CSS Float:- The CSS float property is a positioning property. It is used to push an element to the left or right, allowing other element to wrap around it. It is generally used with images and layouts.
+16.	CSS Font:- CSS font is used for design text or font for display on web page. CSS font properties define the font family, boldness, size, and the style of a text.
+17.	Font-Size property:- We can define size of font in following way
+With Em
+With Percent
+With Pixels
+If you set the text size with pixels then you can gives full control over the text size.
+18.	Font size in Em:- The em size unit is recommended by the W3C. 1em is equal to default text size in browsers (16px). The size convert pixels to em using this formula: pixels/16=em
+19.	 Font size in percent:- Text size work on all browsers, you can use default font-size in percent for the <body> element.
+20.	CSS Margin:- margins are used for give sufficient space around an element (outside the border). The margin does not have a background color, and it is completely transparent.
+21.	CSS Pading:- The padding clears an area around the content (inside the border) of an element. The padding is affected by the background color of the element.
+22.	CSS Overflow:- CSS overflow property used to handle the content when it overflows its block level container.
+23.	CSS Position:- position properties are used for set the position of Html elements. css position properties are used for set the position of text, image for display on web page.
+24.	CSS Opacity:-  In CSS we can easily create transparent images very easily by using Opacity.The CSS Opacity property is used to specify the transparency of any Html element. In simple word, you can say that it specifies the clarity of the image.
+Opacity value should be range 0 to 1 only.
+25.	CSS Text Styles:- CSS text styles are used specify space between letters, words, lines etc…
+26.	CSS Word Wrap:- CSS Word Wrap properties are used for breaks the long words and wrap onto the next line. The main use of these properties is to prevent overflow when a long string is unable to fit into a containing box.
+
+   Inline style: 
+=>html tag and css properties are designed with “in” the same “line”.
+Sys: <tag style=”prop:val; prop:val;…….”>
+Personal style or unique style
+Internal style:
+=>html code and css code designed with in same program but not in same line
+=>internal css should defined with in ”style” tag .
+=>style tag we can place either in head section or body section
+Syn: <style>
+           Tag{
+              prop:val;
+            prop:val;          selectors
+           …………
+           }
+          </style>
+
+
+External style:
+=>html code designed in sep file saved with “.hml” and css code designed in sep file saved with ".css” extension.                    Login.html
+Css file:             <link>
+1. no html code
+2  No <style> tag
+3 use only selectors
+Syn: <link rel=”stylesheet” href=”filename.css”>
+Selectors:
+=>it’s a style rule
+=>its block, block is group of properties
+=>used to define styles for elements/tags
+=>should be defined either in internal or external but not inline
+Syn: selector{
+       property:value;
+     property:value;
+     ………….
+}
+Types:
+          *             #       .   space       >            []          ,         :                ::
+         universal, tag, id, class, child, direct  child, attribute,  group,  pseudo classes,  pseudo elements 
+
+
+----------------------------------------------------------------------------------------------------------------------------------------------------------19-12-2024
+----------
+
+Universal selector:
+=>used to define/to apply common styles for all elements
+Syn:   *{
+              prop:val;
+               ………….
+             }
+
+tag sel: used to define/to apply styles for all instances of specific element (tag).
+Syn: tag-name{
+               prop:val; 
+                }
+
+
+<!--  
+id sel: used to apply style for 1 instance of specific element(tag).
+=> inline styles
+
+
+Syn: #id-name{
+       prop:val;
+         .....
+} 
+
+id name is case sensetive;
+id should not repeat
+
+mapping:
+ <tag id="id-name">
+-->
+
+class sel: used to apply common styles for group of instances of specific tag.
+=> also used to apply common styles for group of tags.
+
+Syn:
+     .class-name{
+        prop:val;
+         …..
+        }
+mapping:
+<tag class="class-name">
+case sensitive
+
+
+Go to file selectors.html, sekectors2;
+
+-----------------------------------------------------------------------------
+20-12-2024
+----------
+
+child sel: used to apply common styles for child position tag.
+Syn:
+grandparent parenttag childtag{
+prop:val;
+…….
+}
+
+ 
+direct child sel: used to apply common styles for child position tag only not grand parent and other.
+
+Syn:
+ptag > ctag{
+prop:val;
+}
+
+
+Go to file selectors3.html;
+
+
+attribute sel: used to apply common styles for elements based on specified attribute.
+
+Syn:
+[attribute]{
+
+}
+like
+[href]{
+}
+
+or
+tagname[attribute]{
+}
+or 
+[attribute="value"]{
+
+}
+or
+tagname[attribute="value"]{
+
+}
+or
+[attribute1],[attribute2]{
+}
+
+
+
+
+
+Go to file selectors4.html;
+
+
+group sel: combine group of previous selectors;
+=> used to apply common styles for group of selectors;
+Syn:
+tag1,tag2,..{
+
+}
+or
+#id1,#id2,#id3{
+
+}
+or
+.c,#id2,tag..{
+}
+
+Go to file selectors5.html;
+
+
+-----------------------------------------------------------------------------
+23-12-2024
+----------
+
+pseudo selectors
+
+ 1)classes  
+
+SYn: 
+
+     :p-class{ prop:val; ... }
+OR   sel:p-class{}
+
+
+
+ 2)elements
+ 
+Syn:  
+
+  ::p-ele{
+  prop:val;
+}
+Go to file selectors7;
+
+
+
+Low to High priority selectors
+------------------------------
+1. default (first apply)
+2.universal
+3.tag
+4.class
+5.child
+6.direct child 
+7.attribute
+8.id    (last apply) 
+
+
+-----------------------------------------------------------------------------
+24-12-2024
+----------
+Properties
+----------
+
+1) padding-bottom, padding-left, padding-right, padding-top
+	=padding
+
+Go to file properties1;
+
+
+2)margin-bottom, margin-left, margin-right, margin-top
+	=margin
+Position=> absolute, relative, fixed, sticky
+
+
+3) border-bottom, border-left, border-right, border-top
+   =border
+
+-----------------------------------------------------------------------------
+26-12-2024
+----------
+Every tag represented as box
+
+display
+-------
+=>inline, block, inline-block, none, flex, grid
+
+flex
+=> elements in row oe column format
+
+grid
+=> row & column 
+-----------------------------------------------------------------------------
+01-101-2025
+-----------
+Syn:
+
+@keyframe ani-name
+{
+from{
+prop:val;
+….
+}
+to{
+prop:val;
+….
+}
+}
+
+@keyframe ani-name
+{
+x%{
+prop:val;
+….
+}
+y%{
+prop:val;
+….
+}
+}
+
+selector{
+animation-name:ani-name;
+animation-duration:Nsec;
+animation-iteration-count:1/n number/ infinite;
+animation-delay:Nsec;
+animation-direction:Normal/reverse/alternative
+}
+
+Go to file animation1;
+-----------------------------------------------------------------
+
+
+
+JavaScript
+----------
+
+Functioum
+=>  function fun-name(){
+statement;
+}
+
+
+calling
+=>    fun-name(); html inline or internal
+
+
+Obects in js
+------------
+=> window
+=> document
+=>console
+-----------------------------------------------------------------------------
+06-01-2025
+-----------
+Js printing method
+------------------
+
+=> write()  write data document without line breaking 
+document.write(val1,val2...)
+=>writeln() write data document with line breaking 
+document.write(val1,val2...)
+
+=>log()  write data on console without line breaking 
+console.log(val1,val2...)
+
+-> console is always to use display error
+
+Error type
+----------
+TypeError
+ReferenceError
+URIError
+RangeError
+
+SyntaxError
+
+literals
+--------
+
+-> String
+=>"" & '' are SL (JS not character)
+=> Sl reps string/text
+=> it supports one line.
+=> it not support interpolation
+=> since JS1
+
+-> template
+=>` `(bactick Op) is TL
+=> Tl reps string/text
+=> it supports n number of line
+=> it support interpolation
+=>since JS6
+
+
+""inside "" not allowed but other same scenario for everyone
+
+-----------------------------------------------------------------------------
+20-01-2024
+----------
+parsing:-
+
+1. implicit parse
+**, *, /, %, -, ++, --
+
+2. explicit parse
+other then the above operators explicit parsing rqd. 
+
+a. using functions
+parseInt()=> string to int
+parseFloat()=> string to float
+
+syn: window.parseInt("data")
+
+"10"=>10
+"ram"=> NaN
+
+
+b. using parse operator
+
+=> + is parse operator
+=> unary opt, it used as prefix only.
+
+syn: +var
+     +"10"=> 10
+     +"20.5"=>20.5
+     +"ram"=> NaN
+
+-----------------------------------------------------------------------------
+forEach method 
+go to file fun2.html
+
+filter method, map method, 
+go to file arrowfun;
+
+II/IE function
+go to file II_IE_fun.html
+
+rest operator 
+go to file rest_operator.html
+
+default parameters
+go to file defpara.html
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    
+    <title>Page Title</title>
+   <script>
+    const sum = function(x,y,z){
+            return x+y+z;
+        }
+
+        const sum1 = function(...n){
+            let tot=0;
+           n.forEach(e=>tot+=e);
+           return tot;
+        }
+   </script>
+</head>
+<body>
+    <h3>demo on rest operator</h3>
+    <p>
+        spread o/p => array/collection
+        rest o/p => parameter
+    </p>
+
+    <script>
+        
+        document.write(`${sum(10,20,30)}<br>`); //60
+        document.write(`${sum(22)}<br>`) ;//NaN
+        document.write(`${sum()}<br>`); //NaN
+
+        document.write(`${sum(1,2)}<br>`);//NaN
+        document.write(`${sum(1,2,3,4,5)}<br>`);//6
+
+        
+        document.write(`${sum1(10,20,30)}<br>`); //60
+        document.write(`${sum1(22)}<br>`) ;//22
+        document.write(`${sum1()}<br>`); //0
+
+        document.write(`${sum1(1,2)}<br>`);//3
+        document.write(`${sum1(1,2,3,4,5)}<br>`);//15
+    </script>
+</body>
+</html>

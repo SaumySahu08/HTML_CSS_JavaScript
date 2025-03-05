@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        input{
+            margin: 10px;
+        }
+        button{
+            margin: 10px;
+        }
+        span{
+            color: red;
+        }
+
+    </style>
+    
+</head>
+<body>
+   <div>
+    <form action="dom1.html" id="f1" method="post">
+        <h2>Registration form</h2>
+        <input type="text" id="un"  placeholder="FullName"><br>
+        <span id="errfna"></span><br>
+        <input type="password" id="psw"  placeholder="Password"><br>
+        <span id="errpsw"></span><br><br>
+    
+        <input type="text" id="mail"  placeholder="Email" ><br>
+    
+        <input type="text" id="mo"  placeholder="Phone Number"  maxlength="10"><br>
+        <span id="errmo"></span><br>
+    
+        <input type="text" id="pin" placeholder="Pincode"><br>
+        <span id="errpin"></span><br>
+        <button>Submit</button>
+    
+    </form>
+   </div>
+
+   <script src="validation2.js"></script>
+</body>
+</html>

@@ -1,0 +1,39 @@
+<h3>demo on var Vs let typeof</h3>
+<script>
+    var x=100; //var defination
+    document.writeln(x,"<br>");
+    var x ="name"; //var re-defination
+    document.writeln(x,"<br>");
+
+    y=15
+    document.writeln(y,"<br>");
+    document.writeln(y*10,"<br>");
+    var y; // y is hoisting
+    // let y error
+
+    var a=10;
+    var b=25.56;
+    let c="vf";
+    let d='j';
+    const e=true;
+    var f;
+    let g= null;
+    document.writeln(a,`->`,typeof a,`<br>`);
+    document.writeln(b,`->`,typeof b,`<br>`);
+    document.writeln(c,`->`,typeof c,`<br>`);
+    document.writeln(d,`->`,typeof d,`<br>`);
+    document.writeln(e,`->`,typeof e,`<br>`);
+    document.writeln(f,`->`,typeof f,`<br>`);
+    document.writeln(g,`->`,typeof g,`<br>`);
+
+
+    var h=new Date();
+    let i = [11,22,33];
+    let ob= {x:10,y:20};
+    document.writeln(h,"<br>");
+    document.writeln(i,"<br>");
+    document.writeln(ob,"<br>");
+    document.writeln(ob.x,ob.y,"<br>");
+
+
+</script>

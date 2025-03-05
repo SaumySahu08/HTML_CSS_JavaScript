@@ -1,0 +1,9 @@
+#row1{
+    padding: 50px;
+}
+#firstimg img:hover{
+    cursor: pointer;
+    width: 300px;
+    height: 250px;
+    box-shadow: 0 20px 25px rgba(178, 216, 143, 0.5);
+}

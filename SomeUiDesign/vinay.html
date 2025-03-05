@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel="stylesheet" href="front3css.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+    <style>
+        .main {
+            width: 1270px;
+            /* Set width to typical laptop width */
+            height: 768px;
+            /* Set height to typical laptop height */
+            
+            padding: 25px;
+            background: url(v1.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            opacity: 0; /* Start hidden */
+            transform: translateY(20px); /* Start from below */
+            transition: opacity 0.3s ease, transform 0.3s ease;
+        }
+        .main.visible{
+            opacity: 1; /* Fade in */
+            transform: translateY(); 
+        }
+        .main p{
+            opacity: 0; /* Start hidden */
+            transform: translateY(20px); /* Start from below */
+            transition: opacity 1s ease, transform 1s ease;
+        }
+        .main p.visible{
+            opacity: 1; /* Fade in */
+            transform: translateY(0);
+        }
+        .e1{
+            display: inline-block;
+            opacity: 0; /* Start hidden */
+            transform: translateY(20px); /* Start from below */
+            transition: opacity 1.2s ease, transform 1.2s ease;
+        }
+         .e1.visible {
+            opacity: 1; /* Fade in */
+            transform: translateY(0); /* Move to original position */
+        }
+
+
+        .e2{
+            margin-top: 40px;
+            opacity: 0; /* Start hidden */
+            transform: translateY(20px); /* Start from below */
+            transition: opacity 1.5s ease, transform 1.5s ease;
+        }
+        .e2.visible {
+            opacity: 1; /* Fade in */
+            transform: translateY(0); /* Move to original position */
+        }
+        .e2 h1 {
+            font-size: 200px;
+
+            text-shadow: 20px 20px 10px rgba(0, 0, 0, 0.7);
+            /* Horizontal, Vertical, Blur, Color */
+            color: white;
+
+        }
+        .btn {
+            display: flex; /* Use flexbox to align items */
+            align-items: center; /* Center items vertically */
+            cursor: pointer; /* Change cursor to pointer on hover */
+            padding: 10px; /* Add some padding */
+            background-color: #bbbbbb; /* Background color for the button */
+            color: white; /* Text color */
+            border-radius: 20px; /* Rounded corners */
+            border: none; /* Remove border */
+            transition:transform 0.5s, background-color 0.3s; /* Smooth transition for hover effect */
+            width: 10%;
+            margin: auto;
+            margin-top: 100px;
+            padding-left: 20px;           
+            font-size: 20px;
+            box-shadow: 0 0 10px black;
+            opacity: 0; /* Start hidden */
+            transform: translateY(20px); /* Start from below */
+            transition: opacity 1.7s ease, transform 1.7s ease;
+            
+        }
+        .btn.visible{
+            opacity: 1; /* Fade in */
+            transform: translateY(0);
+        }
+
+
+        .btn img {
+            margin-right: 8px; /* Space between image and text */
+            width: 24px; /* Set a fixed width for the image */
+            height: auto; /* Maintain aspect ratio */
+        }
+
+        .btn:hover {
+            transform: translateY(-10px);
+            background-color: #858c93; /* Darker background on hover */
+        }
+        footer{
+            background: rgb(19, 18, 18);
+            padding-bottom: 50px;
+            
+        }
+        .social-icons {
+            display: flex;
+            gap: 40px; /* Space between icons */
+            margin-left: 45%;
+        }
+        .social-icons a {
+            text-decoration: none;
+            color: rgb(158, 156, 156); /* Default color */
+            font-size: 30px; /* Icon size */
+           
+        }
+        .social-icons a:hover {
+            color: #007bff; /* Change color on hover */
+           
+        }
+        .f2{
+            margin-left: 2%;
+        }
+        .f2 h5{
+           color: lightslategray;
+        }
+        .f2 p{
+           color: lightslategray;
+        }
+        
+    </style>
+</head>
+
+<body>
+    
+    <div class="main">
+        <p style="font-size: 30px; color: aliceblue; display: inline;">VINAY SAHU</p>
+        <div class="e1">
+            <img src="v3.png">
+        </div>
+        <div class="e2">
+            <h1>VCREATIONS</h1>
+        </div>
+        <div class="btn" onclick="location.href='vinay2.html'">
+            <img src="v4.png" >
+            <span>Play</span>
+        </div>
+        
+    </div>
+<footer>
+    <h1>------------------------------------ &emsp; &emsp; -----------------------------------</h1>
+    <div class="social-icons">
+        <a href="https://www.instagram.com/soumy_sahu_8/" target="_blank" title="Instagram">
+            <i class="fab fa-instagram"></i>
+        </a>
+        
+        <a href="https://www.facebook.com" target="_blank" title="Facebook">
+            <i class="fab fa-facebook-f"></i>
+        </a>
+        <a href="mailto:soumysahu074@gmail.com" title="Email">
+            <i class="fas fa-envelope"></i>
+        </a><br>
+       
+    </div>
+    <div class="f2">
+        <h5>CONTACT:</h5>
+    <p>+917477255934 <br>
+        <a href="mailto:soumysahu074@gmail.com">soumysahu074@gmail.com</a><br>
+          
+    </p>
+    
+   
+    </div>
+</footer>
+<script>
+    // JavaScript to add the 'visible' class to each element after the page has fully loaded
+    window.addEventListener('load', function() {
+        // Select all elements that you want to animate
+        const elements = document.querySelectorAll('body *'); // Select all elements in the body
+        elements.forEach((element, index) => {
+            // Use a timeout to stagger the animations
+            setTimeout(() => {
+                element.classList.add('visible');
+            }, index * 50); // Adjust the delay as needed (100ms here)
+        });
+    });
+</script>
+</body>
+
+</html>

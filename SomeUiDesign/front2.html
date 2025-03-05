@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Aggro</title>
+    <link rel="stylesheet" href="front2.css">
+
+    
+   <style>
+ .dropdown {
+            position: relative;
+            display: inline-block;
+        }
+
+        /* Style for the dropdown content */
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #cce8a5;;
+            min-width: 160px;
+            z-index: 1;
+            border-radius: 10px;
+        }
+
+        /* Style for each item in the dropdown */
+        .dropdown-content a {
+            color: #528d8f;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+            text-align: center;
+        }
+
+        /* Show the dropdown content on hover */
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+
+        header{
+            background: #cce8a5;
+            border-radius: 10px;
+            width: 100%;
+            height: 100px;
+            display: flex;
+        }
+        #menu{
+            padding-top: 50px;
+            margin-left: 150px;
+        }
+        #menu a{
+            font-size: 20px;
+            text-decoration: none;
+            
+        }
+        #m1{
+            color: darkslategray;
+        }
+        .column{
+            flex: 1;
+        }
+        #logbutton{
+            margin-top: 45px;
+            margin-left: 150px;
+            font-size: 16px;
+            background-color: white;
+            padding: 8px 16px;
+            color: black;
+            border: 2px solid #e7e7e7;
+            transition-duration: 0.4s;
+            cursor: pointer;
+            border-radius: 20px;
+            
+  
+        }
+        #logbutton:hover {background-color: #e7e7e7;}
+
+   </style>
+</head>
+<body>
+    <header>
+        <div class="column" style="display: inline-block;" >
+            <img src="b.png" style="width: 130px; height: 100px; ">
+        </div>
+        <div class="column" style="display: inline-block;" id="menu">
+            <a href="" id="m1" >About Us</a>
+            <a href="" id="m1" style="padding-left: 20px;">Products</a>
+            <a href="" id="m1" style="padding-left: 20px;">Review</a>
+
+            <div class="dropdown">
+                <a href="" style="padding-left: 20px;" id="m1">Category</a>
+                <div class="dropdown-content" style="color: aliceblue;">
+                    <a href="">Category1</a>
+                    <a href="">Category2</a>
+                    <a href="">Category3</a>
+                    <a href="">Category4</a>
+                </div>
+            </div>
+        </div>
+        <div class="column" >
+            <button id="logbutton">Log in </button>
+        </div>
+
+    </header>
+    <div>
+        <h1>Products</h1>
+    </div>
+    <main class="flex-box">
+        
+
+        <!-- sub container (flext-items) -->
+        
+        <div>
+        <!-- content -->
+        
+        <img src="a.jpg">
+        <h4>Best True Wireless Pods</h4>
+        <strong>From &#8377;1500</strong>
+        
+        </div>
+        
+        <!-- sub container (flext-items) -->
+        
+        <div>
+        <!-- content -->
+        
+        <img src="a.jpg">
+        <h4>Best True Wireless Pods</h4>
+        <strong>From &#8377;1500</strong>
+        
+        </div>
+        
+        <!-- sub container (flext-items) -->
+        
+        <div>
+        <!-- content -->
+        
+        <img src="a.jpg">
+        <h4>Best True Wireless Pods</h4>
+        <strong>From &#8377;1500</strong>
+        
+        </div>
+        
+        <!-- sub container (flext-items) -->
+        
+        <div>
+        <!-- content -->
+        
+        <img src="a.jpg">
+        <h4>Best True Wireless Pods</h4>
+        <strong>From &#8377;1500</strong>
+        
+        </div>
+        
+        
+        
+        </main>
+
+
+
+
+</body>
+</html>

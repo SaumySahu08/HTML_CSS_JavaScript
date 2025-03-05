@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <title>DOM3</title>
+
+    <style>
+        #i{color: brown;}
+        .c{color: aqua;}
+    </style>
+    <h3>demo on document object method</h3>
+
+    <h2 id="i">HTML</h2>
+    <span class="c">CSS</span>
+    <p class="c">JS</p>
+    <div class="c">BootStrap</div>
+    <h3 class="c">ReactJs</h3>
+
+    <script>
+        const ob1= document.querySelector("#i");
+        document.write(`${ob1}<br>`);
+        
+        const ob2= document.querySelectorAll(".c");
+        document.write(`${ob2}<br>`);
+
+        for(let e of ob2){
+        document.write(`${e} => ${e.tagName}<br>`);
+
+        }
+
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

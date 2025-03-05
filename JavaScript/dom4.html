@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <title>DOM4</title>
+
+</head>
+
+<body>
+    <h2>demo on element object properties</h2>
+
+    <p>
+        settings: <br>
+        eleobj.attr=>returns val <br>
+        eleobj.getAttribute("attr") <br>
+
+        eleobj.atte=>assign val <br>
+        eleobj.setAttribute("attr","val")
+    </p>
+
+    <h1 id="h">Hello</h1>
+    <input type="text" id="tb" value="1000"> <br>
+    <hr>
+
+    <script>
+
+        const h1 = document.getElementById("h");
+        document.write(`${h1.innerHTML}<br>`);
+
+        //h1.innerHTML="";
+        //h1.innerHTML="Saumy";
+        h1.innerHTML += " Saumy";
+
+        const tf = document.getElementById("tb");
+        document.write(`${tf.value}<br>`);
+        //tf.value="";
+        //tf.value="2000";
+    </script>
+
+    <hr>
+
+    <h2>attr settings</h2>
+    
+    <img src="C:\Users\SAUMY\Desktop\HTML\a.jpg" width="150" height="150"><br>
+    <input type="password"  id="pw" >
+    <hr>
+    <script>
+        const i = document.images[0];
+        document.write(`${i.src} ${i.width} ${i.height}`);
+                    //i.getAttribute("src");
+        i.src="my-passport-photo.jpg"; //i.setAttribute("src","my-passport-photo.jpg");
+        i.width="400";
+       i.removeAttribute("height");
+       i.title="sdasf";
+
+       document.getElementById("pw").type="text"; //anonymous object
+
+    </script>
+
+</body>
+
+</html>

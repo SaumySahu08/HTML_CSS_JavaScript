@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+   
+    <title>DOM Implementation</title>
+    <meta charset="UTF-8">
+
+    <style>
+        .container{
+            display: inline-block;
+            border: 1px solid black;
+            font-size: 110%;
+            font-weight: bold;
+        }
+        .container button,input{
+            border: none;
+            cursor: pointer;
+        }
+        input{
+            width: 50px;
+            text-align: center;
+            outline: none;
+            cursor:text ;
+        }
+    </style>
+   
+</head>
+<body>
+    <img src="my-passport-photo.jpg" width="150px" height="150px" >
+    <h4>Baskin Robbins - Ice Cream Desserts</h4>
+    <h4>Begumpet</h4>
+    <h3>Thunder Hot Fudge &nbsp; &nbsp; &#8377; 200</h3>
+    <span><strong></strong></span>
+    <div class="container">
+        <button id="decre">-</button>
+        <input type="text"  id="qty" value="0" >
+        <button id="incre">+</button>
+    </div>
+    <br>
+    
+    <strong>Bill Details:</strong>
+    <span>Item Total &nbsp;  &nbsp;  &nbsp; </span>
+    <output id="itemTotal">&#8377;0</output><br>
+    <span>GST & Charges &nbsp; &nbsp;</span>
+    <span id="gst">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &#8377;0</span>  <br>  
+    <strong>TO PAY</strong>
+    <output id="toAmt">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&#8377;0</output>
+
+    <script>
+        let tmt,tax, iamt;
+
+        //button code
+        document.querySelector("#decre").onclick=function(){
+            if(+qty.value>0)
+            qty.value--;
+        compute();
+        }
+        document.querySelector("#incre").onclick=function(){
+            if(+qty.value>0)
+            qty.value--;
+        compute();
+        }
+
+        function compute(){
+         iamt=qty.value*200;
+        tax=iamt*0.08;
+        tamt=iamt+tax;
+        itemTotal.innerHTML=`&#8377; ${iamt}`;
+        gst.innerHTML=`&#8377; ${tax}`;
+        toAmt.innerHTML=`&#8377; ${tamt}`;
+        }
+
+    </script>
+</body>
+</html>

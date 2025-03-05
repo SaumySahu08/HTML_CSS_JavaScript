@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <style>
+        body{
+            height: 100vh;
+            margin: 0;
+        }
+        .main{
+            width: 100%;
+            height: 100%;
+            background: whitesmoke;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .logdiv{
+            margin: auto;
+            height: 68%;
+            width: 30%;
+           background: white;
+            border-radius: 15px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .inlogdiv{
+            
+            
+            width: 80%;
+            height: 90%;
+            
+        }
+        .inlogdiv input{
+          outline: none;
+          border: none;
+          font-size: 15px;
+          
+          background: transparent;
+          border-bottom: 2px solid rgb(198, 235, 168);
+          width: 100%; /* Set width to 100% of the parent */
+            padding: 10px; /* Add some padding for better appearance */
+            box-sizing: border-box;
+
+        }
+        .inlogdiv input:first-child {
+            margin-bottom: 20px; /* Adjust the value for desired gap */
+        }
+        .inlogdiv input:last-child {
+            margin-bottom: 10px; /* Adjust the value for desired gap */
+        }
+       .inputdiv{
+        border-radius: 4px;
+        box-shadow: 5px 0 10px rgba(162, 255, 149, 0.2);
+        width: 100%;
+        
+       }
+       .btn{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+       }
+       .btn button{
+        margin-top: 40px;
+        margin-right: 15px;
+        padding: 5px 10px;
+        font-size: 20px;
+        border-radius: 10px;
+        
+       }
+    </style>
+</head>
+<body>
+    <div class="main">
+       <div class="logdiv">
+        <div class="inlogdiv">
+            <h1 align="center">Log In</h1>
+           <div class="inputdiv">
+            <input type="text" placeholder="Enter Username" style="margin-top: 20px;">
+            <input type="password" placeholder="Enter Password">
+
+           </div>
+          <div class="btn">
+            <button>Log In</button>
+          </div>
+        </div>
+       </div>
+    </div>
+</body>
+</html>

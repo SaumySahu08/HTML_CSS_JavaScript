@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <script src='arrowfun.js'></script>
+</head>
+
+<body>
+    <h3>arrow functions</h3>
+    <script>
+        myFun();
+        document.write(`${add(10, 20)}<br>`);
+        document.write(`${prod(15, 20)}<br>`);
+        document.write(`${natsum(10)}<br>`);
+        document.write(`${area(2)}<br>`);
+
+        const eles = [90, 55, 100, 30];
+        eles.forEach(x => document.write(`${x} `));
+        let s = 0;
+        eles.forEach(x => s += x);
+        document.write(`<br> Sum of eles: ${s}<br>`);
+
+        //callback  a[i], a[j]
+        eles.sort((i, j) => i - j);
+        document.write(`eles ${eles}<br>`);
+        //callback  a[i], a[j]
+        eles.sort((i, j) => j - i); //desc order
+        document.write(`eles ${eles}<br>`);
+
+        const a = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+
+        let even = a.filter(e => e % 2 === 0); // new function of js
+        let odd = a.filter(e => e % 2 !== 0);
+        document.write(`even ${even}<br>`);
+        document.write(`odd ${odd}<br>`);
+
+        //map change original array
+        let b=[2,5,8,15];
+        document.write(`B ${b}<br>`);
+       b= b.map(e=>e*2);
+        document.write(`B ${b}<br>`);
+
+
+    </script>
+</body>
+
+</html>

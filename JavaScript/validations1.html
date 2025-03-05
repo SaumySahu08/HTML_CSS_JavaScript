@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+
+    <title>Page Title</title>
+   
+
+</head>
+<body>
+   <h2>demo on validations</h1> 
+    <p>
+        validations <br>
+        => checking user input <br>
+        => form validations/ client side validations / js validations <br>
+        
+    </p>
+
+    <input type="text" id="un">
+    <button onclick="checkUser()">check user</button>
+    <script>
+        function checkUser(){
+        const exp = new RegExp(/shiva/i);
+        //const exp = /shiva/i;
+
+        alert(exp.test(un.value));
+        }
+    </script>
+
+</body>
+</html>

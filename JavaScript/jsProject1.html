@@ -1,0 +1,63 @@
+
+
+
+<h2>Create dropdown with js loop</h2>
+
+<script>
+
+
+document.write("<select id='d'>");
+
+for(let d=1;d<=31;d++){
+    document.write("<option>"+d+"</option>");
+}
+document.write("</select>");
+
+
+    document.write("<select id='m'>");
+    let month=['january','fabruary'];
+    for(let i=0;i<month.length;i++){
+        document.write("<option>"+month[i]+"</option>");
+
+    }
+    document.write("</select>");
+
+    document.write("<select id='m'>");
+
+    for(let y=2025;y>=1905;y--){
+        document.write("<option>"+y+"</option>");
+    }
+    document.write("</select>");
+
+  
+
+   
+
+
+
+</script>
+
+<h2>Create table with js loop DO</h2>
+
+<script>
+
+document.write("<table border='2'>");
+        document.write(`<tr>
+                        <th>Slno</th>
+                        <th>Name</th>
+                        <th>Course</th>
+                        <th>Phone Number</th>
+          </tr>`  );
+
+          let i=1;
+          do{
+            document.write(`<tr>
+                <td>1</td>
+                <td>Saumy</td>
+                <td>JAVA</td>
+                <td>7477255934</td>
+                </tr>`);
+                i++;
+          }while(i<=10);
+          document.write("</table>")
+</script>

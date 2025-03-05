@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>leadgen</title>
+    <link rel="stylesheet" href="grid1.css">
+    <link rel="icon" href="a.png">
+<style>
+
+/*
+@keyframes colorchange
+{
+from{
+background:red;
+}
+to{
+background:blue;
+}
+
+}
+body{
+animation-name:colorchange;
+animation-duration:3s;
+animation-iteration-count:2;
+animation-direction:alternative;
+animation-delay:3s;
+}
+
+*/
+
+/* multi point animation */
+
+/*
+@keyframes colors
+{
+0%{color:red;}    /*0s*/          /*beacause of 10s*/
+
+/* 25%{color:blue;}   2.5s */
+
+/* 50%{color:green;}    5.0s */
+
+/* 75%{color:hotpink;}   7.5s */
+
+/* 100%{color:cyan;}   10s */
+
+ /* } */ 
+
+/* #h1{
+animation:colors 10s;
+} */
+
+
+
+ @keyframes loading {
+            100% {
+                transform: rotate(360deg);
+            }
+        }
+
+        .load {
+            width: 150px;
+            height: 150px;
+            border: 25px solid blue;
+            border-top: 25px solid cyan;
+            border-radius: 50%;
+            animation: loading 10s linear infinite; /* Added 'infinite' for continuous rotation */
+            animation-fill-mode: forwards; /* Maintain the last frame */
+            margin: 100px auto; /* Center the loader */
+        }
+</style>
+
+
+</head>
+
+<body>
+<div class="load"></div>
+</body>
+
+</html>

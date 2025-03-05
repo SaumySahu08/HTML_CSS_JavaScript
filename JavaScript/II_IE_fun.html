@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+   
+    <script src='fun1.js'></script>
+</head>
+<body>
+    <h2>demo on imidiate invoke(II)/IE function </h2>
+    <script>
+        (function(){
+            document.write(`hi, i am ii expr<br>`);
+        }) ();
+        (()=>{
+            document.write(`hi i am ii arrow<br>`);
+        }) ();
+
+        ((x,y)=>{
+            document.write(`sum is ${x+y}<br>`);
+        }) (10,20);
+
+    </script>
+</body>
+</html>
